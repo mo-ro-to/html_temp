@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 文字セレクト次の背景色設定 */
+::selection {background:#ffcc00; /* Safari */}
+::-moz-selection {background:#ffcc00; /* Firefox */}
+
+*{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+}
+* {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+nav,
+section,
+small{
+	display:block;
+	font-size:100%;
+}
+
+a{ color:#6f4b3e;}
+a:hover{color:#222222;}
+
+.fl{float:left}
+.fr{float:right}
+.cl{clear:both;}
+
+/* clearfix */
+.clearfix:after {
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.clearfix {
+	zoom:1;/*for IE 5.5-7*/
+	min-height: 1px;
+}
+
+/* sub,sup */
+sup,sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	_vertical-align: bottom;
+	position: relative;
+	font-size: 70%;
+}
+sup {bottom: 1ex;}
+sub {top: .5ex;}

@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------- body ----------*/
+body{
+	font-family: 'ＭＳ Ｐゴシック','MS PGothic','メイリオ UI','Meiryo UI','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3',Osaka,sans-serif;
+	font-size:85%;
+	background:#bbbbbb;
+}
+
+/*---------- header ----------*/
+header{
+	background:#d9d0ac;
+	color:#908052;
+	padding:5px;
+}
+header h1{
+	font-size:25px;
+	font-family:"Century Gothic";
+	font-weight:normal;
+}
+header .subtit{
+	font-size:x-small;
+}
+
+/*---------- navi ----------*/
+nav #nav1 li{
+	list-style:none;
+	padding:11px 0px 11px 10%;
+	letter-spacing:1px;
+	font-size:12px;
+	font-family:"Century Gothic";
+}
+nav #nav1 a{
+	text-decoration:none;
+	color:#444444f;
+	line-height:15px;
+	border-left:1px dotted #ffffff;
+	padding:0px 0px 0px 11px;
+}
+nav #nav1 a:hover{ text-decoration:underline;}
+
+nav #nav2 li{
+	list-style:none;
+	width: 25%;
+	padding:10px 0 10px 10%;
+	letter-spacing:1px;
+	font-size:12px;
+	font-family:"Century Gothic";
+	float: left;
+}
+nav #nav2 a{
+	text-decoration:none;
+	color:#444444f;
+	padding:0px 0px 0px 10px;
+}
+nav #nav2 a:hover{ text-decoration:underline;}
+
+#a1{ background:#eeeeee;}
+#a2{ background:#dddddd;}
+#a3{ background:#cccccc;}
+
+/*---------- contents ----------*/
+#contents{
+	padding:5px;
+}
+
+/*---------- footer ----------*/
+footer{
+	padding:5px 0;
+	font-size:xx-small;
+	text-align:right;
+	color:#ffffff;
+	letter-spacing:1px;
+}
+footer *{
+	padding:3px;
+	color:#444444;
+	text-decoration:none;
+}
+footer #copy{
+	background:#aaaaaa;
+}
+footer #credit{
+	color:#666666;
+	background:#cccccc;
+}
+
+/*---------- other ----------*/
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/*---------- Retina Display ----------*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){
+	ul#links li a {
+		display: block;
+		background-image: url(../img/common/right_arrow@2x.png);
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: 13px 12px;
+	}
+}
